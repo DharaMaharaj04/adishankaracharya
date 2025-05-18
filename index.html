@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Statue of Oneness</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <style>
+    body {
+      scroll-behavior: smooth;
+      font-family: 'Helvetica Neue', sans-serif;
+    }
+    .highlight {
+      font-weight: bold;
+      color: #a74f37;
+    }
+    .menu:hover {
+      color: #a74f37;
+    }
+    .title {
+      color: #a74f37;
+    }
+    .bg {
+      background-color: #a74f37;
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-800">
+
+  <!-- Header -->
+  <header class="bg-white shadow sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto flex justify-between items-center p-4">
+      <h1 class="text-2xl font-bold title">Statue of Oneness</h1>
+      <button id="menuToggle" class="md:hidden focus:outline-none">
+        <svg class="w-6 h-6 text-[#a74f37]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+      <nav class="hidden md:flex space-x-4 text-sm" id="menu">
+        <a href="#location" class="menu">Location</a>
+        <a href="#features" class="menu">Features</a>
+        <a href="#gallery" class="menu">Gallery</a>
+        <a href="#philosophy" class="menu">Philosophy</a>
+        <a href="#footer" class="menu">Contact</a>
+      </nav>
+    </div>
+    <!-- Mobile Menu -->
+    <div class="md:hidden px-4 pb-4 hidden flex-col space-y-2" id="mobileMenu">
+      <a href="#location" class="block menu">Location</a>
+      <a href="#features" class="block menu">Features</a>
+      <a href="#gallery" class="block menu">Gallery</a>
+      <a href="#philosophy" class="block menu">Philosophy</a>
+      <a href="#footer" class="block menu">Contact</a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="relative text-white text-center py-32 px-4" style="background-image: url('https://organiser.org/wp-content/uploads/2023/09/statue_800x420.jpg'); background-size: cover; background-position: center;">
+  </section>
+  <section>
+    <div class="bg-opacity-40 p-2 rounded-lg max-w-xl mx-auto" data-aos="fade-up">
+      <h2 class="text-2xl md:text-6xl font-bold mb-4">Statue of Oneness</h2>
+      <p class="text-lg md:text-xl">A tribute to <span class="highlight">Adi Shankaracharya</span> & the philosophy of Advaita Vedanta</p>
+    </div>
+  </section>
+
+  <!-- Location Section -->
+  <section id="location" class="py-16 bg-gray-50">
+    <div class="max-w-6xl mx-auto px-6 text-center" data-aos="fade-up">
+      <h2 class="text-3xl font-semibold mb-6">Location & Overview</h2>
+      <div class="grid md:grid-cols-3 gap-8 text-lg">
+        <div><span class="highlight">Place:</span> Omkareshwar, MP<br/><span class="highlight">Nearby:</span> 80km from Indore</div>
+        <div><span class="highlight">Height:</span> 189ft<br/><span class="highlight">Weight:</span> 100 tonnes</div>
+        <div><span class="highlight">Inaugurated:</span> Sept 21, 2023<br/><span class="highlight">By:</span> CM Shivraj Singh Chouhan</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-6 text-center" data-aos="fade-up">
+      <h2 class="text-3xl font-semibold mb-6">Features & Sustainability</h2>
+      <div class="grid md:grid-cols-3 gap-8 text-lg">
+        <div><span class="highlight">Material:</span> 88% copper alloy<br/><span class="highlight">Lifespan:</span> 500 years</div>
+        <div><span class="highlight">Wind Resistant:</span> 180 km/h<br/><span class="highlight">Seismic:</span> Zone 3</div>
+        <div><span class="highlight">Eco:</span> Solar + Rainwater<br/><span class="highlight">Plants:</span> Ayurvedic herbs</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section id="gallery" class="py-16 bg-gray-100">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <img src="https://tse1.mm.bing.net/th?id=OIP.TUMn2Fpp2NKh4TAxLzHlXQHaEK&pid=Api&P=0&h=180" alt="View 1" class="rounded-lg shadow" data-aos="zoom-in">
+        <img src="https://organiser.org/wp-content/uploads/2023/09/18_10_2022-statue_of_oneness_mp_news_20221018_14564.jpg" alt="View 2" class="rounded-lg shadow" data-aos="zoom-in">
+        <img class="w-full aspect-video rounded-lg shadow" src="https://xpresstimes.in/wp-content/uploads/2023/09/cm-mp-1-1.jpg" allowfullscreen data-aos="zoom-in">
+      </div>
+    </div>
+  </section>
+
+  <!-- Philosophy -->
+  <section id="philosophy" class="py-16 bg-white">
+    <div class="max-w-4xl mx-auto px-6 text-center" data-aos="fade-up">
+      <h2 class="text-3xl font-semibold mb-6">Philosophy & Cultural Importance</h2>
+      <p class="text-lg leading-relaxed">
+        The <span class="highlight">Statue of Oneness</span> symbolizes <span class="highlight">Advaita Vedanta</span>—the timeless Indian philosophy of non-duality. Depicting <span class="highlight">Adi Shankaracharya</span> as a 12-year-old, it inspires spiritual awakening, peace, and unity beyond boundaries.
+      </p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="footer" class="bg text-white py-8">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      <p class="text-lg">Celebrating Statue of Oneness – Omkareshwar | BAPS Anand</p>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>AOS.init({ duration: 1000 });</script>
+  <script>
+    // Toggle for mobile menu
+    const toggle = document.getElementById('menuToggle');
+    const mobileMenu = document.getElementById('mobileMenu');
+
+    toggle.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
