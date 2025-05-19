@@ -3,179 +3,131 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Akshardham Temple – Spiritual and Architectural Wonder</title>
+  <title>Statue of Oneness</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <style>
-    body { scroll-behavior: smooth; }
-    .section-title::after {
-      content: "";
-      display: block;
-      width: 80px;
-      height: 4px;
-      background-color: #BC906E;
-      margin: 10px auto;
+    body {
+      scroll-behavior: smooth;
+      font-family: 'Helvetica Neue', sans-serif;
     }
-    .transition-colors {
+    .highlight {
       font-weight: bold;
+      color: #a74f37;
     }
-    .transition-colors:hover {
-      background-color: #d6c0af;
-      padding: 10px;
+    .menu:hover {
+      color: #a74f37;
     }
-    footer {
-      background-color: #BC906E;
+    .title {
+      color: #a74f37;
     }
-    h1 {
-      color: #b48460;
+    .bg {
+      background-color: #a74f37;
     }
   </style>
 </head>
-<body class="bg-gray-50 text-gray-800 font-sans">
+<body class="bg-white text-gray-800">
 
+  <!-- Header -->
   <header class="bg-white shadow sticky top-0 z-50">
-  <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
-    <h1 class="text-xl font-bold text-[#b48460]">🙏 Akshardham</h1>
+    <div class="max-w-7xl mx-auto flex justify-between items-center p-4">
+      <h1 class="text-2xl font-bold title">Statue of Oneness</h1>
+      <button id="menuToggle" class="md:hidden focus:outline-none">
+        <svg class="w-6 h-6 text-[#a74f37]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+      <nav class="hidden md:flex space-x-4 text-sm" id="menu">
+        <a href="#location" class="menu">Location</a>
+        <a href="#features" class="menu">Features</a>
+        <a href="#gallery" class="menu">Gallery</a>
+        <a href="#philosophy" class="menu">Philosophy</a>
+        <a href="#footer" class="menu">Contact</a>
+      </nav>
+    </div>
+    <!-- Mobile Menu -->
+    <div class="md:hidden px-4 pb-4 hidden flex-col space-y-2" id="mobileMenu">
+      <a href="#location" class="block menu">Location</a>
+      <a href="#features" class="block menu">Features</a>
+      <a href="#gallery" class="block menu">Gallery</a>
+      <a href="#philosophy" class="block menu">Philosophy</a>
+      <a href="#footer" class="block menu">Contact</a>
+    </div>
+  </header>
 
-    <!-- Mobile Menu Button -->
-    <button id="menu-toggle" class="md:hidden text-[#b48460] focus:outline-none text-2xl">
-      ☰
-    </button>
-
-    <!-- Desktop Menu -->
-    <nav class="hidden md:flex space-x-6 text-sm font-semibold" aria-label="Primary navigation">
-      <a href="#overview" class="transition-colors hover:text-[#BC906E]">Overview</a>
-      <a href="#architecture" class="transition-colors hover:text-[#BC906E]">Architecture</a>
-      <a href="#features" class="transition-colors hover:text-[#BC906E]">Features</a>
-      <a href="#importance" class="transition-colors hover:text-[#BC906E]">Spirituality</a>
-    </nav>
-  </div>
-
-  <!-- Mobile Menu Items -->
-  <div id="mobile-menu" class="md:hidden hidden px-4 pb-4 space-y-2 bg-white shadow text-sm font-semibold">
-    <a href="#overview" class="block transition-colors hover:text-[#BC906E]">Overview</a>
-    <a href="#architecture" class="block transition-colors hover:text-[#BC906E]">Architecture</a>
-    <a href="#features" class="block transition-colors hover:text-[#BC906E]">Features</a>
-    <a href="#importance" class="block transition-colors hover:text-[#BC906E]">Spirituality</a>
-  </div>
-</header>
-
-  <section class="relative bg-cover bg-center h-96 text-white" style="background-image: url('https://i.pinimg.com/736x/01/13/8e/01138ebe7ac2e4323cd53c8b9ae614cb.jpg');">
-    <div class="bg-black bg-opacity-50 h-full flex items-center justify-center">
-      <h2 class="text-4xl font-bold text-center">A Divine Blend of Spirituality, Culture & Art</h2>
+  <!-- Hero -->
+  <section class="relative text-white text-center py-32 px-4" style="background-image: url('https://organiser.org/wp-content/uploads/2023/09/statue_800x420.jpg'); background-size: cover; background-position: center;">
+  </section>
+  <section>
+    <div class="bg-opacity-40 p-2 rounded-lg max-w-xl mx-auto" data-aos="fade-up">
+      <h2 class="text-2xl md:text-6xl font-bold mb-4">Statue of Oneness</h2>
+      <p class="text-lg md:text-xl">A tribute to <span class="highlight">Adi Shankaracharya</span> & the philosophy of Advaita Vedanta</p>
     </div>
   </section>
 
-  <section id="overview" class="py-12 px-6 max-w-5xl mx-auto" data-aos="fade-up">
-    <h2 class="text-2xl font-bold text-center section-title">📜 Overview</h2>
-    <div class="mt-6 grid sm:grid-cols-2 gap-6">
-      <div>
-        <p><strong>Location:</strong> NH 24, Near Noida Mor, Delhi</p>
-        <p><strong>Opened:</strong> 6 November 2005</p>
-        <p><strong>Founder:</strong> Pramukh Swami Maharaj (BAPS)</p>
-      </div>
-      <div>
-        <p><strong>Dedicated to:</strong> Bhagwan Swaminarayan (1781–1830)</p>
-        <p><strong>Visitors per day:</strong> 8,000+ (average)</p>
-        <p><strong>Meaning:</strong> “Abode of the Eternal”</p>
+  <!-- Location Section -->
+  <section id="location" class="py-16 bg-gray-50">
+    <div class="max-w-6xl mx-auto px-6 text-center" data-aos="fade-up">
+      <h2 class="text-3xl font-semibold mb-6">Location & Overview</h2>
+      <div class="grid md:grid-cols-3 gap-8 text-lg">
+        <div><span class="highlight">Place:</span> Omkareshwar, MP<br/><span class="highlight">Nearby:</span> 80km from Indore</div>
+        <div><span class="highlight">Height:</span> 189ft<br/><span class="highlight">Weight:</span> 100 tonnes</div>
+        <div><span class="highlight">Inaugurated:</span> Sept 21, 2023<br/><span class="highlight">By:</span> CM Shivraj Singh Chouhan</div>
       </div>
     </div>
   </section>
 
-  <section id="architecture" class="bg-white py-12 px-6 max-w-5xl mx-auto" data-aos="fade-up">
-    <h2 class="text-2xl font-bold text-center section-title">🏛️ Architectural Grandeur</h2>
-    <div class="mt-10 grid md:grid-cols-2 gap-8 items-center">
-      <div class="space-y-4">
-        <img src="https://i.pinimg.com/736x/4a/b1/61/4ab161a83469735b9a79537edafd5ac2.jpg" alt="Akshardham Temple Front View" class="w-full h-auto rounded-xl shadow-lg border-4 border-orange-300">
-        <p class="text-sm text-center italic text-gray-600">Intricate carvings adorn the sandstone and marble of the main monument</p>
-      </div>
-      <div class="space-y-4">
-        <p><strong>Material:</strong> Rajasthani pink sandstone and Italian Carrara marble (no steel used)</p>
-        <p><strong>Design:</strong> Traditional Indian architecture — domes, mandapas, shikharas</p>
-        <p><strong>Craftsmen:</strong> 7,000+ artisans and volunteers from across India</p>
-        <blockquote class="italic text-gray-700 border-l-4 border-orange-500 pl-4">
-          “A timeless testimony to Indian culture, spirituality, and architecture.”
-        </blockquote>
+  <!-- Features Section -->
+  <section id="features" class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-6 text-center" data-aos="fade-up">
+      <h2 class="text-3xl font-semibold mb-6">Features & Sustainability</h2>
+      <div class="grid md:grid-cols-3 gap-8 text-lg">
+        <div><span class="highlight">Material:</span> 88% copper alloy<br/><span class="highlight">Lifespan:</span> 500 years</div>
+        <div><span class="highlight">Wind Resistant:</span> 180 km/h<br/><span class="highlight">Seismic:</span> Zone 3</div>
+        <div><span class="highlight">Eco:</span> Solar + Rainwater<br/><span class="highlight">Plants:</span> Ayurvedic herbs</div>
       </div>
     </div>
   </section>
-   
-  <section id="features" class="bg-gray-100 py-12 px-6 max-w-5xl mx-auto" data-aos="fade-up">
-    <h2 class="text-2xl font-bold text-center section-title">🌟 Key Attractions & Features</h2>
-    <ul class="list-disc list-inside mt-6 space-y-2">
-      <li><strong>Sahaj Anand Water Show:</strong> A multimedia fountain show depicting a Vedic tale</li>
-      <li><strong>Exhibition Halls:</strong> 3 halls with films, animatronics, dioramas (Neelkanth Yatra, etc.)</li>
-      <li><strong>Yagnapurush Kund:</strong> Largest stepwell-style musical fountain</li>
-      <li><strong>Garden of India:</strong> Bronze statues of Indian heroes and sages</li>
-      <li><strong>Abhishek Mandap:</strong> Devotees can perform water offerings</li>
-    </ul>
+
+  <!-- Gallery Section -->
+  <section id="gallery" class="py-16 bg-gray-100">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <img src="https://tse1.mm.bing.net/th?id=OIP.TUMn2Fpp2NKh4TAxLzHlXQHaEK&pid=Api&P=0&h=180" alt="View 1" class="rounded-lg shadow" data-aos="zoom-in">
+        <img src="https://organiser.org/wp-content/uploads/2023/09/18_10_2022-statue_of_oneness_mp_news_20221018_14564.jpg" alt="View 2" class="rounded-lg shadow" data-aos="zoom-in">
+        <img class="w-full aspect-video rounded-lg shadow" src="https://xpresstimes.in/wp-content/uploads/2023/09/cm-mp-1-1.jpg" allowfullscreen data-aos="zoom-in">
+      </div>
+    </div>
   </section>
 
-    <!-- Gallery Section -->
-  <section id="gallery" class="bg-gray-50 py-12 px-6 max-w-6xl mx-auto" data-aos="fade-up">
-    <h2 class="text-2xl font-bold text-center section-title">Visual Experience</h2>
-    
-    <!-- Videos -->
-  
-    <div class="flex justify-center mt-6">
-    <iframe class="rounded-xl shadow-lg border-4 border-orange-300 w-[400px] h-[400px]"
-      src="https://www.youtube.com/embed/DwsYVv36Vo0"
-      title="Akshardham Drone View"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowfullscreen>
-    </iframe>
-  </div>
-</section>
-
-
-
-  <section class="bg-white py-12 px-6 max-w-5xl mx-auto" data-aos="fade-up">
-    <div class="grid md:grid-cols-2 gap-8 mt-10">
-   <div class="">
-    <img src="https://akshardham.com/newdelhi/wp-content/uploads/2015/04/akshardham_gajendrapith.jpg" alt="Akshardham Temple Front View" class="w-full h-auto rounded-xl shadow-lg border-4 border-orange-300">
-    
-   </div>
-
-   <div class="">
-    <img src="https://wallpapercave.com/wp/wp3917582.jpg" alt="Akshardham Temple Front View" class="w-full h-auto rounded-xl shadow-lg border-4 border-orange-300">
-
-   </div>
-   </div>
-   <div class="grid md:grid-cols-2 gap-8 mt-10">
-   <div class="">
-     <img src="https://i.pinimg.com/736x/af/d0/58/afd058d7267b41f19f6bded357903146.jpg" alt="Akshardham Temple Front View" class="w-full h-auto rounded-xl shadow-lg border-4 border-orange-300">
-     </div>
-     <div class="">
-    <img src="https://akshardham.com/newdelhi/wp-content/uploads/2015/05/akshardham_monument_evening-106.jpg" alt="Akshardham Temple Front View" class="w-full h-auto rounded-xl shadow-lg border-4 border-orange-300">
-   </div>
-  </div>
-   </section>
-
-  <section id="importance" class="py-12 px-6 max-w-5xl mx-auto" data-aos="fade-up">
-    <h2 class="text-2xl font-bold text-center section-title">🕊️ Spiritual & Cultural Significance</h2>
-    <p class="mt-4">Akshardham is more than a monument — it's a spiritual journey and cultural showcase:</p>
-    <ul class="list-disc list-inside mt-4 space-y-2">
-      <li>Promotes values like peace, harmony, devotion, and service</li>
-      <li>Encourages youth engagement and volunteerism</li>
-      <li>UNESCO and international figures have praised it as a “modern wonder”</li>
-      <li>Built using traditional techniques, echoing Vastu Shastra and Shilpa Shastra</li>
-      <li>Symbolizes the eternal connection between India’s past and future</li>
-    </ul>
+  <!-- Philosophy -->
+  <section id="philosophy" class="py-16 bg-white">
+    <div class="max-w-4xl mx-auto px-6 text-center" data-aos="fade-up">
+      <h2 class="text-3xl font-semibold mb-6">Philosophy & Cultural Importance</h2>
+      <p class="text-lg leading-relaxed">
+        The <span class="highlight">Statue of Oneness</span> symbolizes <span class="highlight">Advaita Vedanta</span>—the timeless Indian philosophy of non-duality. Depicting <span class="highlight">Adi Shankaracharya</span> as a 12-year-old, it inspires spiritual awakening, peace, and unity beyond boundaries.
+      </p>
+    </div>
   </section>
 
-  <footer class="transition-colors bg-[#BC906E] text-white text-center py-6 mt-10">
-    <p>Celebrating India's living spirituality | BAPS Anand</p>
+  <!-- Footer -->
+  <footer id="footer" class="bg text-white py-8">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      <p class="text-lg">Celebrating Statue of Oneness – Omkareshwar | BAPS Anand</p>
+    </div>
   </footer>
 
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>AOS.init();</script>
+  <script>AOS.init({ duration: 1000 });</script>
   <script>
-  const toggleButton = document.getElementById('menu-toggle');
-  const mobileMenu = document.getElementById('mobile-menu');
+    // Toggle for mobile menu
+    const toggle = document.getElementById('menuToggle');
+    const mobileMenu = document.getElementById('mobileMenu');
 
-  toggleButton.addEventListener('click', () => {
-    mobileMenu.classList.toggle('hidden');
-  });
-</script>
+    toggle.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
 </body>
 </html>
